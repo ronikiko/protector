@@ -1,0 +1,16 @@
+{
+	"name": "protector-marketplace",
+	"description": "Protector — Claude as your resident red-teamer.",
+	"owner": {
+		"name": "ronikiko"
+	},
+	"plugins": [
+		{
+			"name": "protector",
+			"source": "./plugins/protector",
+			"description": "Six-phase self-red-team security flow: vet AI add-ons, break into a running copy, hunt secrets in git history, scan dependencies, harden against cloning — prove, fix, re-verify.",
+			"category": "security",
+			"tags": ["security", "audit", "red-team", "pentest"]
+		}
+	]
+}

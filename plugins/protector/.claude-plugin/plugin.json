@@ -1,0 +1,21 @@
+{
+	"name": "protector",
+	"displayName": "Protector",
+	"description": "Turns Claude into your own red-teamer: a six-phase flow that vets your AI add-ons, breaks into a running copy of your app/site/game, hunts leaked secrets across git history, flags vulnerable dependencies, and hardens the build against cloning — proving each finding and fixing it.",
+	"version": "1.0.0",
+	"author": {
+		"name": "ronikiko"
+	},
+	"homepage": "https://github.com/ronikiko/protector",
+	"repository": "https://github.com/ronikiko/protector",
+	"license": "MIT",
+	"keywords": [
+		"security",
+		"security-audit",
+		"red-team",
+		"pentest",
+		"secrets",
+		"dependencies",
+		"sast"
+	]
+}
