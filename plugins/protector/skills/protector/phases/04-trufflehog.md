@@ -3,11 +3,11 @@
 A secret deleted from the current tree still lives in history and may still be
 valid. Scan the **whole git history**, then check which findings are live.
 
-## Run (via Docker — see scripts/run-tools.sh)
+## Run (via Docker — runner at ${CLAUDE_PLUGIN_ROOT}/scripts/run-tools.sh)
 
 ```bash
 # Full history scan of this repo, verified secrets surfaced
-scripts/run-tools.sh trufflehog
+bash "${CLAUDE_PLUGIN_ROOT}/scripts/run-tools.sh" trufflehog
 ```
 
 This scans every commit, not just the working tree. TruffleHog's verification

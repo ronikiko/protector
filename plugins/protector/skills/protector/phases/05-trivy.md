@@ -4,14 +4,14 @@ Your product inherits the vulnerabilities of everything it pulls in. Trivy scans
 dependencies, container images, and IaC/config, and — crucially — tells you the
 **exact fixed version** to move to.
 
-## Run (via Docker — see scripts/run-tools.sh)
+## Run (via Docker — runner at ${CLAUDE_PLUGIN_ROOT}/scripts/run-tools.sh)
 
 ```bash
 # Filesystem scan: lockfiles + misconfig, HIGH/CRITICAL, only where a fix exists
-scripts/run-tools.sh trivy-fs
+bash "${CLAUDE_PLUGIN_ROOT}/scripts/run-tools.sh" trivy-fs
 
 # If the product ships a container image:
-scripts/run-tools.sh trivy-image <image:tag>
+bash "${CLAUDE_PLUGIN_ROOT}/scripts/run-tools.sh" trivy-image <image:tag>
 ```
 
 Covers: `package-lock.json`/`yarn.lock`, `requirements.txt`/`poetry.lock`,

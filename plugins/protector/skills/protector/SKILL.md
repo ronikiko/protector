@@ -6,7 +6,7 @@ description: >-
   secrets across git history, flags vulnerable dependencies, and hardens the
   build against cloning — then fixes what it finds. Use when the user asks to
   "protect", "harden", "security-audit", "red-team", or "pen-test" their own
-  product, or runs /protector.
+  product, or runs /protector:protector.
 ---
 
 # Protector — Fable 5.2 as your resident red-teamer
@@ -60,7 +60,7 @@ phase look clean. If you couldn't prove it, label it **unverified**, don't drop 
 ## Tooling notes (this environment)
 
 - `trivy` and `trufflehog` aren't installed natively but run via Docker — see
-  `scripts/run-tools.sh` for pinned, checksummed invocations.
+  `"${CLAUDE_PLUGIN_ROOT}/scripts/run-tools.sh"` for pinned, checksummed invocations.
 - Phase 3 needs the app actually running; use the project's own run method.
 - Never exfiltrate anything you find. Secrets go in the report **redacted**
   (first/last 4 chars only) and the real remediation is rotation.
